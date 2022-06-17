@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Website</title>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="navBar">
+            <img src="images/logo.png">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SPECIFICATIONS</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONATCT US</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="left-half">
+                <h1>THE<br>REAL<br>SOUND</h1>
+            </div>
+            <div class="right-half">
+                <p>Click here to listen</p>
+                <img src="images/play.png" id="play">
+            </div>
+        </div>
+
+    </div>
+
+    <audio id="mySong">
+        <source src="NIVIRO_ft._PollyAnna_-_Fast_Lane_[NCS_Release](128k).mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var play = document.getElementById("play");
+
+        play.onclick = function () {
+            if (mySong.paused) {
+                mySong.play();
+                play.src = "images/pause.png";
+            }
+            else {
+                mySong.pause();
+                play.src = "images/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

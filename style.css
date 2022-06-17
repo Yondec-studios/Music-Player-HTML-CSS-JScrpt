@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.cover {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/Headphone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navBar {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navBar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: #5f5f5f;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.navBar ul li a:hover {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.left-half {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    float: left;
+    transition: 0.5s;
+}
+
+.left-half h1 {
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+}
+
+.left-half:hover {
+    text-shadow: 0 0 10px rgb(160, 160, 160), 0 0 30px rgb(192, 192, 192);
+}
+
+.right-half {
+    float: right;
+    margin-right: 10%;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.right-half p {
+    font-size: 18px;
+    margin-right: 15px;
+    color: #5f5f5f;
+    font-weight: 400;
+}
+
+#play {
+    width: 50px;
+}
